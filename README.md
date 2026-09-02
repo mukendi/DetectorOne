@@ -58,14 +58,15 @@ DetectorOne stays intentionally defensive. The project does not provide exploit 
 
 ```
 
----
 # PoC
 
 ![Architecture](https://github.com/mukendi/DetectorOne/blob/main/1.png)
+Fig: Image 1
 ![Architecture](https://github.com/mukendi/DetectorOne/blob/main/2.png)
+Fig: Image 2
 ![Architecture](https://github.com/mukendi/DetectorOne/blob/main/3.png)
+Fig: Image 3
 
----
 
 ## DetectorOne Kernel Sensor
 
