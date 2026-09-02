@@ -61,12 +61,11 @@ DetectorOne stays intentionally defensive. The project does not provide exploit 
 # PoC
 
 ![Architecture](https://github.com/mukendi/DetectorOne/blob/main/1.png)
-Fig: Image 1
+**Figure 1: Laughing of DetectetOne and Virunga**
 ![Architecture](https://github.com/mukendi/DetectorOne/blob/main/2.png)
-Fig: Image 2
+**Figure 2: Disabling DetectetOne capacity**
 ![Architecture](https://github.com/mukendi/DetectorOne/blob/main/3.png)
-Fig: Image 3
-
+**Figure 3: Cannarys reaction**
 
 ## DetectorOne Kernel Sensor
 
