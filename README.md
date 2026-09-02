@@ -269,7 +269,7 @@ This split is deliberate. DetectorOne should collect and enforce with minimal ke
 Run the engine from an elevated console after the driver is loaded:
 
 ```powershell
-C:\Users\ultim\source\repos\DetectorOneEngine\x64\Release\DetectorOneEngine.exe
+C:\Users\xxx\source\repos\DetectorOneEngine\x64\Release\DetectorOneEngine.exe
 ```
 
 Expected startup:
@@ -297,10 +297,10 @@ Current Visual Studio linkage points:
 
 ```text
 YARA include path:
-C:\Users\ultim\yara\libyara\include
+C:\Users\xxxx\yara\libyara\include
 
 YARA library path:
-C:\Users\ultim\yara\windows\vs2019\libyara\Release
+C:\Users\xxxx\yara\windows\vs2019\libyara\Release
 
 Linked library:
 libyara64.lib
@@ -319,13 +319,13 @@ Operational guidance:
 The current Visual Studio project is configured to use a local YARA tree under:
 
 ```text
-C:\Users\ultim\yara
+C:\Users\xxxx\yara
 ```
 
 Expected local layout:
 
 ```text
-C:\Users\ultim\yara\
+C:\Users\xxxx\yara\
 |-- libyara\
 |   `-- include\
 |       `-- yara.h
@@ -348,7 +348,7 @@ The Visual Studio project must contain these settings for both `x64 Debug` and `
 | Setting | Value |
 | --- | --- |
 | C/C++ > General > Additional Include Directories | `C:\Users\xxxx\yara\libyara\include;%(AdditionalIncludeDirectories)` |
-| Linker > General > Additional Library Directories | `C:\Users\ultim\xxxx\windows\vs2019\libyara\Release;%(AdditionalLibraryDirectories)` |
+| Linker > General > Additional Library Directories | `C:\Users\xxxx\yara\windows\vs2019\libyara\Release;%(AdditionalLibraryDirectories)` |
 | Linker > Input > Additional Dependencies | `libyara64.lib;%(AdditionalDependencies)` |
 | C/C++ > Language > C++ Language Standard | `ISO C++20 Standard (/std:c++20)` |
 
@@ -357,7 +357,7 @@ The current project file already contains the include directory, library directo
 Recommended environment-variable based setup:
 
 ```powershell
-setx YARA_ROOT "C:\Users\ultim\yara"
+setx YARA_ROOT "C:\Users\xxxx\yara"
 ```
 
 Then the Visual Studio properties can be made portable:
@@ -373,7 +373,7 @@ $(YARA_ROOT)\windows\vs2019\libyara\Release;%(AdditionalLibraryDirectories)
 If using a dynamic YARA build, copy the required DLLs beside the engine executable:
 
 ```text
-C:\Users\ultim\source\repos\DetectorOneEngine\x64\Release\
+C:\Users\xxxx\source\repos\DetectorOneEngine\x64\Release\
 |-- DetectorOneEngine.exe
 |-- libyara64.dll
 `-- Windows_Trojan_CobaltStrike.yar
@@ -407,24 +407,6 @@ TelemetryEngine::Initialize
 
 For production-quality behavior, the engine should not stop just because YARA rules are missing. A missing or invalid rule file should be logged as a medium-severity configuration issue while the telemetry consumer continues running.
 
-Example defensive rule skeleton:
-
-```yara
-rule Suspicious_BYOVD_Imports
-{
-    meta:
-        description = "Flags drivers carrying imports commonly abused in BYOVD chains"
-        scope = "defensive research"
-
-    strings:
-        $terminate = "ZwTerminateProcess" ascii wide
-        $mapio     = "MmMapIoSpace" ascii wide
-        $phys      = "MmGetPhysicalAddress" ascii wide
-        $section   = "ZwMapViewOfSection" ascii wide
-
-    condition:
-        uint16(0) == 0x5A4D and any of them
-}
 ```
 
 ## Build
