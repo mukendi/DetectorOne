@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Canary1-Debug|x64'">
+    <TestCertificate>CN="WDKTestCert ultim,134298859394692943" | 189B84864D01DEC405D936AB6C5AC544DDA61593</TestCertificate>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Canary3-Debug|x64'">
+    <TestCertificate>CN="WDKTestCert ultim,134298859314797715" | 4F2AF74DE4230108B7A60C6CB0DD34D8D8881685</TestCertificate>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Canary2-Debug|x64'">
+    <TestCertificate>CN="WDKTestCert ultim,134298859463808614" | D3C50B694958A59601B784FAB3D8805B39B4AB9C</TestCertificate>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,23 @@
+﻿  Building 'CanaryMesh' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Canary2-Debug\CanaryMesh.inf
+  Stamping [Version] section with DriverVer=08/06/2026,6.12.37.480
+C:\Users\ultim\source\repos\CanaryMesh\CanaryMesh\CanaryMesh.inf(29-29): warning 2083: Section [standard.ntamd64.10.0...16299] not referenced or used.
+  driver_entry.cpp
+  CanaryMesh.vcxproj -> C:\Users\ultim\source\repos\CanaryMesh\x64\Canary2-Debug\CanaryMesh.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\ultim\source\repos\CanaryMesh\x64\Canary2-Debug\CanaryMesh.sys
+  
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\ultim\source\repos\CanaryMesh\x64\Canary2-Debug\CanaryMesh\canarymesh.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\ultim\source\repos\CanaryMesh\x64\Canary2-Debug\CanaryMesh\canarymesh.cat
+  

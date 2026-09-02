@@ -1,0 +1,28 @@
+﻿  Building 'DectectorOne' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Release\DectectorOne.inf
+  Stamping [Version] section with DriverVer=08/27/2026,12.56.21.257
+C:\Users\ultim\source\repos\DectectorOne\DectectorOne\DectectorOne.inf(32-32): warning 2083: Section [standard.ntamd64.10.0...16299] not referenced or used.
+  DetectorOneCallbacks.cpp
+  DetectorOneCanaries.cpp
+  DetectorOneIatRegistry.cpp
+  DetectorOneTelemetry.cpp
+  DriverEntry.cpp
+  Generating Code...
+  DectectorOne.vcxproj -> C:\Users\ultim\source\repos\DectectorOne\x64\Release\DectectorOne.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\ultim\source\repos\DectectorOne\x64\Release\DectectorOne.sys
+  
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\ultim\source\repos\DectectorOne\x64\Release\DectectorOne\dectectorone.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\ultim\source\repos\DectectorOne\x64\Release\DectectorOne\dectectorone.cat
+  

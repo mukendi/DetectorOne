@@ -1,0 +1,9 @@
+Inf2Cat Tool Output:
+............
+Signability test failed.
+
+Errors:
+No installation INF found in the root path of the driver. For the driver to be digitally signed, and for it to install properly the installation inf must be in the root of each driver path you have provided. If you have separate folders with different driver packages for different languages, operating systems or device categories then specify each driver set as a separate driver. Each driver package must be selected separately and must contain an installation INF.
+
+Warnings:
+None
