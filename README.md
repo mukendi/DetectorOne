@@ -63,7 +63,7 @@ DetectorOne stays intentionally defensive. The project does not provide exploit 
 ![Architecture](https://github.com/mukendi/DetectorOne/blob/main/1.png)
 ***Figure 1: Laughing of DetecterOne and Virunga***
 ![Architecture](https://github.com/mukendi/DetectorOne/blob/main/2.png)
-***Figure 2: Disabling DetectetOne capacity***
+***Figure 2: Disabling DetecterOne capacity***
 ![Architecture](https://github.com/mukendi/DetectorOne/blob/main/3.png)
 ***Figure 3: Cannarys reaction***
 
