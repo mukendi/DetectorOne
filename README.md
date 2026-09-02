@@ -22,6 +22,8 @@ The current lab is composed of three cooperating projects:
 
 DetectorOne stays intentionally defensive. The project does not provide exploit primitives, arbitrary kernel read/write helpers, or tooling for loading vulnerable drivers.
 
+
+
 ## High-Level Architecture
 
 ```text
@@ -54,7 +56,17 @@ DetectorOne stays intentionally defensive. The project does not provide exploit 
                          |  - driver watch         |
                          |  - quorum consensus     |
                          +-------------------------+
+
 ```
+
+---
+# PoC
+
+![Architecture](https://github.com/mukendi/DetectorOne/blob/main/1.png)
+![Architecture](https://github.com/mukendi/DetectorOne/blob/main/2.png)
+![Architecture](https://github.com/mukendi/DetectorOne/blob/main/3.png)
+
+---
 
 ## DetectorOne Kernel Sensor
 
